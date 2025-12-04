@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  react-app:
+    image: react-nginx-app
+    container_name: react-container
+    ports:
+      - "3000:80"                
+    restart: unless-stopped
