@@ -15,15 +15,6 @@ pipeline {
             }
         }
 
-        stage('Build React App') {
-            steps {
-                sh """
-                npm install
-                npm run build
-                """
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
