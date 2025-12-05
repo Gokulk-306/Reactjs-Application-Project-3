@@ -40,7 +40,6 @@ pipeline {
                     echo "$PASS" | docker login -u "$USER" --password-stdin
                     docker push ${IMAGE}
                     docker push ${LATEST}
-                    docker logout
                     """
                 }
             }
